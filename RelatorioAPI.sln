@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelatorioAPI", "RelatorioAPI\RelatorioAPI.csproj", "{8BA20CCD-BE20-401F-B120-57A280543B46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelatorioAPI_DOMAIN", "RelatorioAPI_DOMAIN\RelatorioAPI_DOMAIN.csproj", "{B7C3114F-D735-4643-88F6-80FF6D529E51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BA20CCD-BE20-401F-B120-57A280543B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA20CCD-BE20-401F-B120-57A280543B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA20CCD-BE20-401F-B120-57A280543B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA20CCD-BE20-401F-B120-57A280543B46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C3114F-D735-4643-88F6-80FF6D529E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C3114F-D735-4643-88F6-80FF6D529E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C3114F-D735-4643-88F6-80FF6D529E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C3114F-D735-4643-88F6-80FF6D529E51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC3DDBE9-B24C-45D8-B54F-916E487E2BD6}
+	EndGlobalSection
+EndGlobal
