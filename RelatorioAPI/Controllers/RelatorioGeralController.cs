@@ -27,30 +27,13 @@ namespace RelatorioAPI.Controllers
 
         [Route("RelatorioIndividualArea")]
         [HttpPost]
-        public async Task<HttpResponseMessage> RelatorioIndividualArea(RelatorioIndividualAreaViewModel parametros)
+        public async Task<FileContentResult> RelatorioIndividualArea(RelatorioIndividualAreaViewModel parametros)
         {
             var file = await _relatorioAreaApp.RelaotorioIndividualArea(parametros);
 
-            HttpResponseMessage response = new HttpResponseMessage() { StatusCode = HttpStatusCode.OK };
+            var retorno = File(file, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
 
-            
-
-            response.Content = new ByteArrayContent(file);
-
-            response.Content.Headers.ContentLength = file.Length;
-
-            response.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
-
-            response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
-
-            CookieHeaderValue cookie = new CookieHeaderValue("fileDownload", "true")
-            {
-                Path = "/"
-            };
-
-            response.Headers.AddCookies(new CookieHeaderValue[] { cookie });
-
-            return response;
+            return retorno;
         }
 
     }
